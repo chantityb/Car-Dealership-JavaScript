@@ -15,6 +15,31 @@ body{
   background: var(--mainWhite);
 }
 
+/* section title */
+.section-title--special{
+  background: var(--transparentBlue);
+  color: var(--mainWhite);
+  padding: 0.5rem 2rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+/* preloader */
+.preloader{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--mainWhite);
+  z-index: 999;
+}
+
+.hidePreloader{
+  display: none!important;
+}
+
+
+
 /* navbar */
 .navbar{
   background: var(--mainWhite);
@@ -108,5 +133,45 @@ body{
     opacity: 0.6;
   }
 
+  /* skills */
+  .skills-icon{
+    font-size: 3rem;
+    color: var(--mainYellow);
+    background: var(--mainGrey);
+  }
 
+  .skills-icon:hover{
+    color: var(--mainYellow);
+  }
 
+  .skills-underline{
+    width: 4rem;
+    height: 0.3rem;
+    background: var(--mainBlue);
+    margin: 1rem auto;
+  }
+
+/* inventory */
+.inventory{
+  background: var(--mainGrey);
+}
+
+.car-card{
+  border-radius: 0!important;
+}
+
+.car-img{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.car-value{
+  background: var(--mainBlue);
+  color: var(--mainWhite);
+  clip-path: polygon(15% 0, 85% 0, 100% 100%, 0 100%);
+  transition: all 1s linear;
+}
+
+.car-value:hover{
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+}
