@@ -175,3 +175,31 @@ body{
 .car-value:hover{
   clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
 }
+
+/* question */
+.question{
+  background:url('../img/questionBcg.jpeg')center/cover fixed no-repeat;
+}
+
+.question-grey{
+  background: rgba(79,109,122,0.75);
+}
+
+.question-yellow{
+  background: rgba(227,181,5,0.75);
+}
+
+.question-icon{
+  font-size: 4rem;
+  color: var(--mainBlue);
+  transition: all 0.5s ease-in-out;
+}
+
+.question-icon:hover{
+  transform: translateY(-10%);
+  color: var(--mainBlue);
+}
+
+.question-info{
+  color: var(--mainWhite);
+}
